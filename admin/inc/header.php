@@ -8,13 +8,9 @@
 <body>
 <header>
     <div class="wrap">
-        <p>HEADER BACK</p>
         <nav>
             <ul class="ulcenter">
-                <li><a href="../index.php">Front</a></li>
-                <li><a href="newpost.php">New article</a></li>
-                <li><a href="comments.php">Commentaires</a></li>
-                <li><a href="index.php">Back</a></li>
+                <li><a href="index.php">Accueil</a></li>
             </ul>
         </nav>
     </div>
