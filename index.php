@@ -1,10 +1,9 @@
 <?php
-
-session_start();
 require('inc/fonction.php');
-require('inc/pdo.php');
+require('inc/pdo.php')?>
 
-?>
+
+
 <h1>Home</h1>
 
 
@@ -13,7 +12,11 @@ require('inc/pdo.php');
 
 
 
-<?php
+<?php include('inc/footer.php');
+
+
+
+
 
 
  $sql = "SELECT * FROM movies_full ORDER BY rand() LIMIT 20";
@@ -21,9 +24,9 @@ require('inc/pdo.php');
  $query->execute();
  $movies = $query->fetchall();
 
-debug($movies);
+debug($movies);?>
 
- include('admin/inc/header.php');?>
+ <?php include('admin/inc/header.php');?>
 
  <div id="movies">
      <?php foreach ($movies as $movie) { ?>
@@ -41,4 +44,4 @@ debug($movies);
 
 
 
-<?php include('admin/inc/footer.php');
+<?php include('admin/inc/footer.php');?>
