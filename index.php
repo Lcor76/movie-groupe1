@@ -1,23 +1,14 @@
 <?php
+session_start();
+require('inc/fonction.php');
+require('inc/pdo.php');
+// debug($_SESSION);
+
+include('admin/inc/header.php'); ?>
+<h1>Home</h1>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-include('admin/inc/header.php');
-
-
-
-
-
-include('admin/inc/footer.php');
+<?php include('admin/inc/footer.php');
