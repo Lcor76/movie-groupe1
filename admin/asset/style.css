@@ -1,3 +1,38 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
@@ -12,7 +47,7 @@ table {
     -moz-box-sizing:border-box;
     box-sizing:border-box;
     -webkit-font-smoothing:antialiased;
-    font-smooth:antialiased;
+    font-smoothing:antialiased;
     text-rendering:optimizeLegibility;
 }
 /* clear */
@@ -20,38 +55,55 @@ table {
 .clear:after { clear:both; }
 .clear { *zoom:1;}
 
-html { font-size:100%; }
-body { font:500 15px/1.4 'Montserrat', sans-serif;color:white; background-color: rgb(77, 73, 73);
-    overflow-x: hidden;
+html {
+  font-size:100%;
 }
-
-.wrap {max-width: 1200px; width:100%;margin: 0 auto;}
-.wrap2 {max-width: 500px; width:100%;margin: 0 auto;padding: 0 10px;}
-input,textarea,select {width:100%;}
-label {display: block;margin-top: 15px;}
-.error {color:red;font-size: .8em;}
-header,footer {background-color: #ec8484;}
-ul.ulcenter li a{
-    transition-duration: 1s;
-	font-family: 'Bebas Neue', serif;
-    font-size: 1.5vw;
-    text-decoration: none;
-    text-transform: uppercase;
-	color:#872dd1;
-	text-align: center;
+body {
+  font:500 15px/1.4 'Montserrat',
+  sans-serif;color:#3b3b3b;
+  background-color: #fff;
+  overflow-x: hidden;
 }
-ul.ulcenter li a:hover{
-    opacity: .6;
+header,footer {
+  padding: 10px 0;
 }
-
+footer {
+  margin-top: 30px;
+}
+.wrap {
+  max-width: 1200px;
+  width:100%;
+  margin: 0 auto;
+}
+/* .wrap2 {max-width: 500px; width:100%;margin: 0 auto;padding: 0 10px;} */
+input,textarea,select {
+  width:100%;
+}
+label {
+  display: block;
+  margin-top: 15px;
+}
+.error {
+  color:red;
+  font-size: .8em;
+}
+header,footer {
+  background-color: #9d9d9d;
+}
 ul.ulcenter {
-    text-align: center;
-  
+  text-align: center;
 }
 ul.ulcenter li {
-    display: inline-block;
-    margin-left: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
+  display: inline-block;
 }
-/* #dream {display: flex;flex-wrap: wrap;justify-content:space-around;} */
+ul.ulcenter li a{
+  text-decoration: none;
+  color:#fff;
+}
+ul.ulcenter li a:hover{
+  color:#eee;
+}
+h1{
+  text-align: center;
+  font-size: 1.4em;
+}
