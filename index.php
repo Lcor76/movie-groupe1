@@ -4,11 +4,10 @@ require('inc/fonction.php');
 require('inc/pdo.php');
 // debug($_SESSION);
 
-include('admin/inc/header.php'); ?>
-<h1>Home</h1>
+include('inc/header.php'); ?>
 
 
 
 
 
-<?php include('admin/inc/footer.php');
+<?php include('inc/footer.php');
