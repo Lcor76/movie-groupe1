@@ -1,9 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="asset/style.css">
-<title>BLOG</title>
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MOVIES AND POSTER</title>
+    <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
 <header>
@@ -11,6 +13,14 @@
         <nav>
             <ul class="ulcenter">
                 <li><a href="index.php">Accueil</a></li>
+                <li><a href="index.php">Home</a></li>
+                <?php if(isLogged()) { ?>
+                    <li><a href="logout.php">Déconnexion</a></li>
+                    <li>Bonjour <?= ucfirst($_SESSION['user']['pseudo']) ?></li>
+                <?php } else { ?>
+                    <li><a href="register.php">Inscription</a></li>
+                    <li><a href="login.php">Connexion</a></li>
+                <?php } ?>
             </ul>
         </nav>
     </div>
