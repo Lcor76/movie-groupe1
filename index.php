@@ -1,25 +1,9 @@
 <?php
 require('inc/fonction.php');
-require('inc/pdo.php')?>
+require('inc/pdo.php');
 
 
-<<<<<<< HEAD
-include('inc/header.php'); ?>
-=======
-<h1>Home</h1>
->>>>>>> 51ba68bfce114ae89fd38196a84a882f93ed168e
-
-
-
-
-
-<<<<<<< HEAD
-<?php include('inc/footer.php');
-=======
-
-
-<?php
-
+include('inc/header.php');
 
  $sql = "SELECT * FROM movies_full ORDER BY rand() LIMIT 20";
  $query = $pdo->prepare($sql);
@@ -27,9 +11,7 @@ include('inc/header.php'); ?>
  $movies = $query->fetchall();
 
 debug($movies);
-
- include('admin/inc/header.php');?>
-
+?>
  <div id="movies">
      <?php foreach ($movies as $movie) { ?>
          <div>
@@ -41,10 +23,4 @@ debug($movies);
      <?php } ?>
 </div>
 
-
-
-
-
-
-<?php include('admin/inc/footer.php');
->>>>>>> 51ba68bfce114ae89fd38196a84a882f93ed168e
+<?php include('inc/footer.php');
