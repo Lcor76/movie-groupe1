@@ -13,7 +13,7 @@
         <nav>
             <ul class="ulcenter">
                 
-                <li><a href="index.php">Home</a></li>
+                <li><a href="../index.php">Home</a></li>
                 <?php if(isLogged()) { ?>
                     <li><a href="logout.php">Déconnexion</a></li>
                     <li>Bonjour <?= ucfirst($_SESSION['user']['pseudo']) ?></li>
