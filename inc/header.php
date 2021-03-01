@@ -12,12 +12,7 @@
     <div class="wrap">
         <nav>
             <ul class="ulcenter">
-<<<<<<< HEAD
-                
-                <li><a href="index.php">Home</a></li>
-=======
-                <li><a href="../index.php">Home</a></li>
->>>>>>> 4d659bef05b0ecdef1c4e5ef91044898dba1e30b
+                <li><a href="admin/index.php">Back</a></li>
                 <?php if(isLogged()) { ?>
                     <li><a href="logout.php">Déconnexion</a></li>
                     <li>Bonjour <?= ucfirst($_SESSION['user']['pseudo']) ?></li>

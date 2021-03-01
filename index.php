@@ -1,15 +1,10 @@
 <?php
-<<<<<<< HEAD
 
 session_start();
 require('inc/fonction.php');
 require('inc/pdo.php');
-=======
-require('inc/fonction.php');
-require('inc/pdo.php')?>
->>>>>>> 51ba68bfce114ae89fd38196a84a882f93ed168e
 
-
+?>
 <h1>Home</h1>
 
 
@@ -18,13 +13,6 @@ require('inc/pdo.php')?>
 
 
 
-<<<<<<< HEAD
-
-
-
-
-
-=======
 <?php
 
 
@@ -47,7 +35,6 @@ debug($movies);
          </div>
      <?php } ?>
 </div>
->>>>>>> 51ba68bfce114ae89fd38196a84a882f93ed168e
 
 
 
