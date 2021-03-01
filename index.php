@@ -1,4 +1,6 @@
 <?php
+require('inc/function.php');
+require('admin/inc/pdo.php')
 
 
 
@@ -13,11 +15,20 @@
 
 
 
+include('inc/header.php');?>
 
-include('admin/inc/header.php');
+<div id="movies">
+
+<?php foreach ($movies as $movie){ ?>
+
+  <div class="boximages"><?php echo $movie['id']; ?></div>
+
+
+<?php } ?>
+
+</div>
 
 
 
 
-
-include('admin/inc/footer.php');
+<?php include('admin/inc/footer.php');
