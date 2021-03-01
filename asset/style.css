@@ -67,6 +67,10 @@ body {
 header,footer {
   padding: 10px 0;
 }
+header{
+  height:200px;
+}
+
 footer {
   margin-top: 30px;
 }
@@ -80,7 +84,7 @@ input,textarea,select {
   width:100%;
 }
 label {
-  display: block;
+  /* display: block; */
   margin-top: 15px;
 }
 .error {
@@ -106,4 +110,44 @@ ul.ulcenter li a:hover{
 h1{
   text-align: center;
   font-size: 1.4em;
+}
+.wrap {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+#movies {
+  width: 1200px;;
+  height: auto;
+  background-color: black;
+  display: flex;flex-wrap: wrap;justify-content: space-around;
+}
+.btnplus {
+  float: right;
+  margin-right: 50px;
+  background-color: black;
+  border-top: 2px solid white;
+
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+
+}
+.btnplus a{
+  color: white;
+  text-decoration: none;
+}
+
+
+#mainfooter {
+  height: 300px;
+}
+#filtres {
+  width: 300px;
+  height: 100px;
+  background-color: lime;
+
+}
+#drame{
+   width: 10%;
 }

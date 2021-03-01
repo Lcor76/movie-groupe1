@@ -4,10 +4,10 @@ require('inc/fonction.php');
 require('inc/pdo.php');
 
 
-if(!empty($_GET['slug']) && ctype_digit($_GET['slug'])) {                                         
+if(!empty($_GET['slug']) && ctype_digit($_GET['slug'])) {
     $slug = $_GET['slug'];
 
-    $sql = "SELECT * FROM movies_full WHERE $slug = slug";
+    $sql = "SELECT * FROM movies_full WHERE $slug = slug LIMIT 10";
 
     $query = $pdo->prepare($sql);
     $query->bindValue(':slug',$slug,PDO::PARAM_INT);
@@ -32,7 +32,7 @@ include('inc/header.php');?>
         <p>-Directeur         : <?= $movie['directors'] ?></p><br/>
         <p>-Casting         : <?= $movie['cast'] ?></p><br/>
         <p>-Writers         : <?= $movie['writers'] ?></p><br/>
-        
+
 
 
 
