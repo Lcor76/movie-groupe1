@@ -28,7 +28,7 @@ debug($movies);
  <div id="movies">
      <?php foreach ($movies as $movie) { ?>
          <div>
-             <a href="details.php<?= $movie['id']; ?>">
+             <a href="details.php?slug=<?= $movie['slug']; ?>">
                  <?php echo imageMovie($movie); ?>
              </a>
 
