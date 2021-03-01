@@ -1,5 +1,5 @@
 <?php
-require('admin/inc/function.php');
+require('inc/fonction.php');
 require('inc/pdo.php');
 session_start();
 require('inc/fonction.php');
