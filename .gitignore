@@ -1,1 +1,6 @@
-
+.DS_Store
+.idea/
+posters/
+vendor/
+composer.phar
+inc/pdo.php
