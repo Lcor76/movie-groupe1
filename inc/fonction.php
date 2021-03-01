@@ -9,6 +9,14 @@ function debug($tableau)
     echo '</pre>';
 }
 
+
+function imageMovie($movie)
+{
+    return '<img src="posters/'.$movie['id'].'.jpg" alt="'.$movie['title'].'">';
+}
+
+
+
 function cleanXss(string $key)
 {
     return trim(strip_tags($_POST[$key]));
