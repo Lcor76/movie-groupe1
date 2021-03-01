@@ -1,0 +1,10 @@
+<?php
+require('inc/function.php');
+
+
+include('inc/header.php'); ?>
+
+
+
+
+<?php include('inc/footer.php');
