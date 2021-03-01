@@ -1,9 +1,15 @@
 <?php
+
+session_start();
 require('inc/fonction.php');
 require('inc/pdo.php');
 
+?>
+<h1>Home</h1>
 
-include('inc/header.php');
+
+<?php
+
 
  $sql = "SELECT * FROM movies_full ORDER BY rand() LIMIT 20";
  $query = $pdo->prepare($sql);
