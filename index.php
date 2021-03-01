@@ -8,11 +8,6 @@ require('inc/pdo.php');
 <h1>Home</h1>
 
 
-
-
-
-
-
 <?php
 
 
@@ -22,9 +17,7 @@ require('inc/pdo.php');
  $movies = $query->fetchall();
 
 debug($movies);
-
- include('admin/inc/header.php');?>
-
+?>
  <div id="movies">
      <?php foreach ($movies as $movie) { ?>
          <div>
@@ -36,9 +29,4 @@ debug($movies);
      <?php } ?>
 </div>
 
-
-
-
-
-
-<?php include('admin/inc/footer.php');
+<?php include('inc/footer.php');
