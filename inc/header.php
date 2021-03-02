@@ -22,5 +22,9 @@
                 <?php } ?>
             </ul>
         </nav>
+        <div id="filtres">
+          <label for="scales">DRAME</label>
+          <input type="checkbox" id="drame" name="scales">
+        </div>
     </div>
 </header>
