@@ -127,6 +127,11 @@ margin-top: 10px;}
 
  }
 
+.bienvenu {
+  color: #D89216;
+  padding-top: 5px;
+}
+
 .nav__toggle {
   display: none; }
   @media (max-width: 599px) {

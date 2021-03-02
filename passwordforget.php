@@ -31,7 +31,7 @@ if(!empty($_POST['submitted'])) {
         <input type="email" id="email" name="email" value="<?= getValue('email'); ?>">
         <span class="error"><?= getError($errors,'email'); ?></span>
 
-        <input id="linkmdp1" type="submit" name="submitted" value="Inscription">
+        <input id="linkmdp1" type="submit" name="submitted" value="Envoyer">
 
     </form>
 

@@ -56,8 +56,8 @@ include('inc/header.php'); ?>
             <div class="boxvide"></div>
             <label id="labs" for="password2">Password confirm *</label>
             <input type="password" id="password2" name="password2" value="">
-            
-            <input id="sub" type="submit" name="submitted" value="Inscription">
+
+            <input id="sub" type="submit" name="submitted" value="Envoyer">
         </form>
     </div>
 
