@@ -47,16 +47,13 @@ table {
     -moz-box-sizing:border-box;
     box-sizing:border-box;
     -webkit-font-smoothing:antialiased;
-    font-smoothing:antialiased;
+    font-smooth:antialiased;
     text-rendering:optimizeLegibility;
 }
 /* clear */
 .clear:before,.clear:after { content:' '; display:table; }
 .clear:after { clear:both; }
 .clear { *zoom:1;}
-
-
-
 
 html { font-size:100%;}
 body { font:500 15px/1.4 'Montserrat',sans-serif;  background-color:#D89216; overflow-x: hidden;}
@@ -112,6 +109,7 @@ body { font:500 15px/1.4 'Montserrat',sans-serif;  background-color:#D89216; ove
   display: block;
   padding: 1rem 1rem;
   color: #ffff;
+>>>>>>> ca11628e390cb0df852c1d0fa65615d8c813532e
   text-decoration: none;
  }
  .nav__item a:hover{
@@ -195,8 +193,9 @@ h1{
   height: 350px;
   margin:0 auto;
   margin-top: 30px;
+  margin-bottom: 30px;
   background: rgba(0, 0, 0, 0.5);
-  /* padding-left: 50px; */
+
 
   }
 .titreh1{
@@ -208,7 +207,7 @@ h1{
 
 }
 
-#pseudo,#email,#password,#password2,#sub{
+#pseudo,#email,#password,#password2,#sub,#login{
   width: 500px;
   margin-left: 75px;
 }
@@ -221,6 +220,7 @@ h1{
   color: #fff;
   font-size: 25px;
   padding: 2px;
+  margin-bottom: 100px;
 }
 
 span{
@@ -247,9 +247,68 @@ span{
   margin:0 auto;
   margin-top: 30px;
   background: rgba(0, 0, 0, 0.5);
+  padding-top:8px;
+  color: #fff;
+}
+#boxdetails{
+  width: 410px;
+  height: 333px;
+  margin:0 auto;
+  margin-top: 1px;
+  background: rgba(0, 0, 0, 0.5);
+  margin-left: 230px;
+  padding: 20px;
+
 }
 .poster{
   float: left;
-  margin-left: 20px;
-  margin-top: 20px;
+  margin-left: 12px;
+  margin-right: 15px;
+
+}
+
+.title{
+  font-size: 30px;
+    text-shadow: 2px 2px 2px black;
+}
+
+#pseudoemail {
+  margin-left: 75px;
+  text-shadow: 2px 2px 2px black;
+
+}
+#titreconnect{
+  font-size: 20px;
+  margin-left: 550px;
+  font-weight: bolder;
+  font-family: sans-serif;
+  width: 100%;
+
+}
+#linkmdp{
+    margin-left: 410px;
+    background: #2C061F;
+    color:white;
+    text-decoration: none;
+    padding: 15px;
+    width: 100px;
+    margin-top: 40px;
+}
+#titremdp {
+  font-size: 20px;
+  margin-left: 35%;
+  font-weight: bolder;
+  font-family: sans-serif;
+  width: 100%;
+  margin-top: 40px;
+
+}
+#linkmdp1{
+  margin-left: 475px;
+  background: #2C061F;
+  color:white;
+  text-decoration: none;
+  padding: 15px;
+  width: 100px;
+  margin-top: 40px;
 }

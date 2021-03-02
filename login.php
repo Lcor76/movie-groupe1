@@ -25,6 +25,7 @@ if(!empty($_POST['submitted'])) {
                   'role' => $user['role'],
                     'ip' => $_SERVER['REMOTE_ADDR']
             );
+            // debug($_SESSION);
             header('Location: index.php');
         } else {
             $errors['login'] = 'The credentials you supplied were not correct';
@@ -36,20 +37,22 @@ if(!empty($_POST['submitted'])) {
 
 include('inc/header.php'); ?>
     <div class="wrap">
-        <h1>Connexion</h1>
-        <div class="wrap2">
+        <h1 id="titreconnect">Connexion</h1>
+        <div id="boxslug">
+          <div class="boxslug2">
             <form action="" method="post" novalidate>
-                <label for="login">Pseudo or E-mail</label>
-                <input type="text" id="login" name="login" value="<?= getValue('login'); ?>">
-                <span class="error"><?= getError($errors,'login'); ?></span>
+                <label id="pseudoemail" for="login">Pseudo or E-mail</label><br>
+                <input type="text" id="login" name="login" value="<?= getValue('login'); ?>"><br>
+                <span class="error"><?= getError($errors,'login'); ?></span><br>
 
-                <label for="password">Password *</label>
+                <label id="labs" for="password">Password *</label><br>
                 <input type="password" id="password" name="password" value="">
 
-                <input type="submit" name="submitted" value="Connexion">
+                <input id="sub" type="submit" name="submitted" value="Connexion">
             </form>
+               <a id="linkmdp" href="passwordforget.php">Mot de passe oublié</a>
+          </div>
 
-            <a href="passwordforget.php">Mot de passe oublié</a>
         </div>
     </div>
 

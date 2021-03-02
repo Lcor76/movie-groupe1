@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 require('inc/fonction.php');
 require('inc/pdo.php')?>
 
@@ -15,9 +17,9 @@ require('inc/pdo.php')?>
  $query->execute();
  $movies = $query->fetchall();
 
-?>
 
- <?php include('inc/header.php');?>
+
+include('inc/header.php');?>
 
 
 
