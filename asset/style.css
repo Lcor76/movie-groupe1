@@ -79,7 +79,12 @@ footer {
   width:100%;
   margin: 0 auto;
 }
-/* .wrap2 {max-width: 500px; width:100%;margin: 0 auto;padding: 0 10px;} */
+.wrap2 {
+  max-width: 500px;
+  width:100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 input,textarea,select {
   width:100%;
 }

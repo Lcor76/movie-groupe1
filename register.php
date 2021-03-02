@@ -4,9 +4,9 @@ require('inc/fonction.php');
 require('inc/pdo.php');
 $errors = [];
 
-if(isLogged()) {
-    header('Location: 403.php');
-}
+// if(isLogged()) {
+//     header('Location: 403.php');
+// }
 
 if(!empty($_POST['submitted'])) {
     // Faille xss

@@ -5,7 +5,7 @@ require('inc/pdo.php');
 
 
 
-if(!empty($_GET['slug'])) {                                         
+if(!empty($_GET['slug'])) {
     $slug = $_GET['slug'];
 
     $sql = "SELECT * FROM movies_full where slug = :slug";
@@ -24,7 +24,7 @@ if(!empty($_GET['slug'])) {
 } else {
     die('404');
 }
-debug($movies);
+// debug($movies);
 
 
 include('inc/header.php');?>
@@ -37,7 +37,7 @@ include('inc/header.php');?>
         <p>-Directeur         : <?= $movies['directors'] ?></p><br/>
         <p>-Casting         : <?= $movies['cast'] ?></p><br/>
         <p>-Writers         : <?= $movies['writers'] ?></p><br/>
-        
+
 
 
 

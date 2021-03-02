@@ -90,15 +90,15 @@ function generateRandomString($length = 10) {
     return $randomString;
 }
 
-//function getArticleById($id)
-//{
-//    global $pdo;
-//    $sql = "SELECT * FROM articles WHERE id = :id";
-//    $query = $pdo->prepare($sql);
-//    $query->bindValue(':id',$id,PDO::PARAM_INT);
-//    $query->execute();
-//    return $query->fetch();
-//}
+function getArticleById($id)
+{
+   global $pdo;
+   $sql = "SELECT * FROM articles WHERE id = :id";
+   $query = $pdo->prepare($sql);
+   $query->bindValue(':id',$id,PDO::PARAM_INT);
+   $query->execute();
+   return $query->fetch();
+}
 
 function isLogged()
 {

@@ -25,6 +25,7 @@ if(!empty($_POST['submitted'])) {
                   'role' => $user['role'],
                     'ip' => $_SERVER['REMOTE_ADDR']
             );
+            // debug($_SESSION);
             header('Location: index.php');
         } else {
             $errors['login'] = 'The credentials you supplied were not correct';
