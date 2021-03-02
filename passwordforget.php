@@ -22,15 +22,18 @@ if(!empty($_POST['submitted'])) {
     }
 }
 
-include('inc/header.php'); ?>
+
+ include('inc/header.php'); ?>
 <div class="wrap2">
-    <h1>Mot de passe oublié</h1>
+    <h1 id="titremdp" >Mot de passe oublié</h1><br>
     <form action="" method="post" novalidate>
-        <label for="email">E-mail *</label>
+        <label id="labs" for="email">E-mail *</label><br>
         <input type="email" id="email" name="email" value="<?= getValue('email'); ?>">
         <span class="error"><?= getError($errors,'email'); ?></span>
 
-        <input type="submit" name="submitted" value="Inscription">
+        <input id="linkmdp1" type="submit" name="submitted" value="Inscription">
+
     </form>
+
 </div>
 <?php include('inc/footer.php');
