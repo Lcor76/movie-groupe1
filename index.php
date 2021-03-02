@@ -22,21 +22,25 @@ require('inc/pdo.php')?>
 
 if (!empty($_GET['submitted'])) {
 
-   
+  
 
     if(!empty($_GET['genres'])) {
         $genres = $_GET['genres'];
 
         if(!empty($_GET['year1'])){
             $year1  = $_GET['year1'];
-            }
+            } 
 
             if(!empty($_GET['year2'])){
             $year2  = $_GET['year2'];
-             }
+             } 
 
     } else {
         $genres = array();
+        $year1  = $_GET['year1'];
+        $year2 =  $_GET['year2'];
+        
+        
     }
 
     $sql = "SELECT * FROM movies_full WHERE  year >= $year1 AND year <= $year2";
