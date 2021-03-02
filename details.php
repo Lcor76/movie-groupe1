@@ -25,6 +25,16 @@ if(!empty($_GET['slug'])) {
 } else {
     die('404');
 }
+
+if(isLogged()){ 
+
+  echo 'Bonjour : '.$_SESSION['users']['pseudo'];
+
+} else {
+
+  echo 'Vous n\'êtes pas connecté';
+}
+
 // debug($movies);
 
 
