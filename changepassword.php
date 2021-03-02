@@ -49,14 +49,14 @@ if(!empty($_GET['email']) && !empty($_GET['token'])) {
 
 include('inc/header.php'); ?>
     <div class="wrap2">
-        <form action="" method="post" novalidate>
+        <form id="boxform" action="" method="post" novalidate>
             <label id="labs" for="password">Password *</label>
             <input type="password" id="password" name="password" value="">
             <span class="error"><?= getError($errors,'password'); ?></span>
-
+            <div class="boxvide"></div>
             <label id="labs" for="password2">Password confirm *</label>
             <input type="password" id="password2" name="password2" value="">
-
+            
             <input id="sub" type="submit" name="submitted" value="Inscription">
         </form>
     </div>
