@@ -30,7 +30,7 @@ include('inc/header.php'); ?>
         <input type="email" id="email" name="email" value="<?= getValue('email'); ?>">
         <span class="error"><?= getError($errors,'email'); ?></span>
 
-        <input type="submit" name="submitted" value="Inscription">
+        <input type="submit" name="submitted" value="Envoyer">
     </form>
 </div>
 <?php include('inc/footer.php');

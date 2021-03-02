@@ -57,7 +57,7 @@ include('inc/header.php'); ?>
             <label for="password2">Password confirm *</label>
             <input type="password" id="password2" name="password2" value="">
 
-            <input type="submit" name="submitted" value="Inscription">
+            <input type="submit" name="submitted" value="Changer mot de passe">
         </form>
     </div>
 
