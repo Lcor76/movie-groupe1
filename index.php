@@ -33,6 +33,10 @@ if (!empty($_GET['submitted'])) {
 
     } else {
         $genres = array();
+        $year1  = $_GET['year1'];
+        $year2 =  $_GET['year2'];
+
+
     }
 
     $sql = "SELECT * FROM movies_full WHERE  year >= $year1 AND year <= $year2";
