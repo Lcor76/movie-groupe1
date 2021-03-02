@@ -64,11 +64,16 @@ body { font:500 15px/1.4 'Montserrat',sans-serif;  background-color:#D89216; ove
  /* ======================================================= */
 .brand {
   font-weight: bold;
-  font-size: 20px; margin-left: 40px;color:#ffff;}
+  font-size: 50px; margin-left: 40px;color:#ffff;
+margin-top: 10px;}
+
 
 .site-header {
   position: relative;
-  background-color: #2C061F; }
+  background-color: #2C061F;
+  height: 100px;
+ }
+
   /*#E1D89F beige #D89216 orange #374045 vert */
 
 .site-header__wrapper {
@@ -98,6 +103,7 @@ body { font:500 15px/1.4 'Montserrat',sans-serif;  background-color:#D89216; ove
     opacity: 0;
     transform: translateY(-100%);
     transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+
      }
     .nav__wrapper.active {
       visibility: visible;
@@ -106,16 +112,19 @@ body { font:500 15px/1.4 'Montserrat',sans-serif;  background-color:#D89216; ove
             } }
 
 .nav__item a {
-  display: block;
+
   padding: 1rem 1rem;
   color: #ffff;
   text-decoration: none;
+  font-size: 20px;
+
  }
 
  .nav__item a:hover{
    background-color: #D89216;
    height: 10px;
-   margin-left: 2em;
+   margin-top: 10px;
+
  }
 
 .nav__toggle {
@@ -215,6 +224,7 @@ h1{
     margin-left: 75px;
     text-shadow: 2px 2px 2px black;
 }
+
 #sub{
   background-color: #2C061F;
   color: #fff;
@@ -222,6 +232,7 @@ h1{
   padding: 2px;
   margin-bottom: 100px;
 }
+
 
 span{
   margin-left: 12%;
@@ -311,4 +322,14 @@ span{
   padding: 15px;
   width: 100px;
   margin-top: 40px;
+}
+
+#boxform {
+  width: 100%;
+  height: 300px;
+  padding-top: 50px;
+}
+.boxvide{
+  height: 10px;
+  width: 300px;
 }
