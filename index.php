@@ -5,10 +5,6 @@ require('inc/fonction.php');
 require('inc/pdo.php')?>
 
 
-
-
-
-
 <?php
 
 
@@ -22,7 +18,7 @@ require('inc/pdo.php')?>
 
 if (!empty($_GET['submitted'])) {
 
-   
+
 
     if(!empty($_GET['genres'])) {
         $genres = $_GET['genres'];
@@ -50,19 +46,19 @@ if (!empty($_GET['submitted'])) {
 
     $sql .= " ORDER BY RAND() LIMIT 20";
 
- 
+
     $query = $pdo->prepare($sql);
 
     if(!empty($genres)) {
         foreach($genres as $genre) {
             $query->bindValue(':'.$genre,'%' . $genre . '%',PDO::PARAM_STR);
-           
+
         }
     }
 
     $query->execute();
     $movies = $query->fetchAll();
-    
+
 
 }
 
@@ -79,19 +75,19 @@ include('inc/header.php');?>
           <?php foreach($categorys as $category)  { ?>
             <label for="<?= $category; ?>"><?= ucfirst($category); ?><input name="genres[]" type="checkbox" value="<?= $category; ?>"></label>
           <?php }  ?>
-           
+
            <input type="number" name="year1" value="1900" />
            <input type="number" name="year2" value="2020" />
            <input id="subfiltre" type="submit" name="submitted" value="FILTRER">
         </div>
-       
-      
+
+
       </div>
     </form>
-   
 
 
-   
+
+
       <div class="clear"></div>
 
 <div class="wrap">

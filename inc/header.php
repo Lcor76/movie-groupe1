@@ -21,7 +21,7 @@
           <li class="nav__item"><a href="index.php">Home</a></li>
           <li class="nav__item"><a href="#">About</a></li>
           <?php if(isLogged()) { ?>
-              <li><a class="nav__item" href="logout.php">Déconnexion</a></li>
+              <li class="nav__item"><a  href="logout.php">Déconnexion</a></li>
               <li>Bonjour <?= ucfirst($_SESSION['user']['pseudo']) ?></li>
           <?php } else { ?>
               <li class="nav__item"><a  href="register.php">Inscription</a></li>
