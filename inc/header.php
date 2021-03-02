@@ -6,25 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MOVIES AND POSTER</title>
     <link rel="stylesheet" href="asset/style.css">
+   
+    
 </head>
 <body>
-<header>
-    <div class="wrap">
-        <nav>
-            <ul class="ulcenter">
-                <li><a href="admin/index.php">Back</a></li>
-                <?php if(isLogged()) { ?>
-                    <li><a href="logout.php">Déconnexion</a></li>
-                    <li>Bonjour <?= ucfirst($_SESSION['user']['pseudo']) ?></li>
-                <?php } else { ?>
-                    <li><a href="register.php">Inscription</a></li>
-                    <li><a href="login.php">Connexion</a></li>
-                <?php } ?>
-            </ul>
-        </nav>
-        <div id="filtres">
-          <label for="scales">DRAME</label>
-          <input type="checkbox" id="drame" name="scales">
-        </div>
+  <header class="site-header">
+    <div class="wrapper site-header__wrapper">
+      <h1 href="#" class="brand">Ace Of Hearts</h1>
+      <nav class="nav">
+        <button class="nav__toggle" aria-expanded="false" type="button">
+          menu
+        </button>
+        <ul class="nav__wrapper">
+          <li class="nav__item"><a href="index.php">Home</a></li>
+          <li class="nav__item"><a href="#">About</a></li>
+          <?php if(isLogged()) { ?>
+              <li><a class="nav__item" href="logout.php">Déconnexion</a></li>
+              <li>Bonjour <?= ucfirst($_SESSION['user']['pseudo']) ?></li>
+          <?php } else { ?>
+              <li class="nav__item"><a  href="register.php">Inscription</a></li>
+              <li class="nav__item"><a  href="login.php">Connexion</a></li>
+          <?php } ?>
+
+        </ul>
+      </nav>
     </div>
-</header>
+  </header>

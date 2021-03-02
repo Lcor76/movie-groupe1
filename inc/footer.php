@@ -5,9 +5,9 @@
 
 <footer>
 <div id="mainfooter">
+  <div class="footerwrap">
 
-
-    <button   class="btnplus" type="submit" name="button"><a href="index.php"> + de films !</a></button>
+  </div>
 
 </div>
 </footer>

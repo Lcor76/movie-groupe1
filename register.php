@@ -66,26 +66,26 @@ if(!empty($_POST['submitted'])) {
     }
 }
 include('inc/header.php'); ?>
-<div class="wrap">
-    <h1>Enregistrement</h1>
+<div id="mainform">
+    <h1 class="titreh1">Formulaire d'inscription</h1>
     <div class="wrap2">
-        <form action="" method="post" novalidate>
-            <label for="pseudo">Pseudo *</label>
-            <input type="text" id="pseudo" name="pseudo" value="<?= getValue('pseudo'); ?>">
-            <span class="error"><?= getError($errors,'pseudo'); ?></span>
+        <form action="" method="post" novalidate><br>
+            <label  id="labs" for="pseudo">Pseudo *</label><br>
+            <input  type="text" id="pseudo" name="pseudo" value="<?= getValue('pseudo'); ?>"><br>
+            <span class="error"><?= getError($errors,'pseudo'); ?></span><br>
 
-            <label for="email">E-mail *</label>
-            <input type="email" id="email" name="email" value="<?= getValue('email'); ?>">
-            <span class="error"><?= getError($errors,'email'); ?></span>
+            <label  id="labs"for="email">E-mail *</label><br>
+            <input  type="email" id="email" name="email" value="<?= getValue('email'); ?>"><br>
+            <span class="error"><?= getError($errors,'email'); ?></span><br>
 
-            <label for="password">Password *</label>
-            <input type="password" id="password" name="password" value="">
-            <span class="error"><?= getError($errors,'password'); ?></span>
+            <label id="labs" for="password">Password*</label><br>
+            <input type="password" id="password" name="password" value=""><br>
+            <span class="error"><?= getError($errors,'password'); ?></span><br>
 
-            <label for="password2">Password confirm *</label>
-            <input type="password" id="password2" name="password2" value="">
+            <label  id="labs"for="password2">Password confirm *</label><br>
+            <input  type="password" id="password2" name="password2" value=""><br>
 
-            <input type="submit" name="submitted" value="Inscription">
+            <input id="sub"type="submit" name="submitted" value="Inscription">
         </form>
     </div>
 </div>
