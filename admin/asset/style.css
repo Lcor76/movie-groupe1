@@ -47,7 +47,7 @@ table {
     -moz-box-sizing:border-box;
     box-sizing:border-box;
     -webkit-font-smoothing:antialiased;
-    font-smoothing:antialiased;
+    font-smooth:antialiased;
     text-rendering:optimizeLegibility;
 }
 /* clear */
