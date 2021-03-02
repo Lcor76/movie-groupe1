@@ -62,7 +62,7 @@ if(!empty($_POST['submitted'])) {
         $query->bindValue(':token',$token,PDO::PARAM_STR);
         $query->execute();
         // redirection
-        // header('Location: login.php');
+        header('Location: login.php');
     }
 }
 include('inc/header.php'); ?>

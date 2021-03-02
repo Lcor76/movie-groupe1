@@ -3,14 +3,6 @@ require('../inc/fonction.php');
 require('../inc/pdo.php');
 
 
-
-
-
-
-
-
-
-
 include('inc/header.php');
 ?>
 
