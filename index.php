@@ -15,8 +15,7 @@ require('inc/pdo.php')?>
  $query->execute();
  $movies = $query->fetchall();
 
-
-debug($movies);?>
+?>
 
  <?php include('inc/header.php');?>
 
@@ -41,7 +40,7 @@ debug($movies);?>
      <div id="movies">
          <?php foreach ($movies as $movie) { ?>
              <div id="imagebox">
-                 <a id="affiches" href="details.php?slug=<?= $movie['slug']; ?>" "style=width:auto;height:200px;">
+                 <a id="affiches" href="details.php?slug=<?= $movie['slug']; ?>" >
                     <?php echo imageMovie($movie); ?>
                   </a>
 
