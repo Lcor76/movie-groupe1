@@ -14,7 +14,7 @@ if(!empty($_POST['submitted'])) {
         $user = $query->fetch();
         if(!empty($user)) {
             // ici le lien créé, il devra etre envoyé par email
-            $html = '<a href="changepassword.php?email='.urlencode($email).'&token='.urlencode($user['token']).'">Click ici pour changer ton mot de passe</a>';
+            $html = '<a href="changePassword.php?email='.urlencode($email).'&token='.urlencode($user['token']).'">Click ici pour changer ton mot de passe</a>';
             echo $html;
         } else {
             $errors['email'] = 'tu sors';
