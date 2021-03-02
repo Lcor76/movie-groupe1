@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MOVIES AND POSTER</title>
     <link rel="stylesheet" href="asset/style.css">
-   
-    
+
+
 </head>
 <body>
   <header class="site-header">
