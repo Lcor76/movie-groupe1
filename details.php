@@ -37,6 +37,10 @@ if(!empty($_GET['slug'])) {
 
 
 include('inc/header.php');?>
+<form method="POST" action="favoris.php?id=<?= $movies['id']?>">
+<input type="submit" name="Ok" value="Ajouter à mes films à voir" >
+</form>
+
 
       <div id="boxslug">
         <div class="boxslug2">
@@ -57,7 +61,8 @@ include('inc/header.php');?>
 
 ?>
 
-<a href="favoris.php?id=<?= $movies['id']?>">Ajouter à mes films à voir</a>
+
+
 
 
 

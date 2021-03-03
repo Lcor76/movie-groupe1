@@ -41,6 +41,7 @@ if (!empty($_GET['id'])) {
         $query->bindValue(':id_movie'   ,$movie_id ,PDO::PARAM_INT );
         $query->execute();
         header('Location:index.php');
+      
 
 
         
