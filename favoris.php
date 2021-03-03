@@ -27,7 +27,7 @@ if (!empty($_GET['id'])) {
 
 
     $utilisateur = $_SESSION['user']['id'];
-    debug($utilisateur);
+  
 
 
     if(!empty($movie)) {
@@ -40,8 +40,26 @@ if (!empty($_GET['id'])) {
         $query->bindValue(':id_user'    ,$utilisateur ,PDO::PARAM_INT );
         $query->bindValue(':id_movie'   ,$movie_id ,PDO::PARAM_INT );
         $query->execute();
-        header('Location:index.php');
-      
+
+        ?>
+        <?php
+         include('inc/header.php'); ?>
+       
+        <?php header('Refresh:2;url=index.php');?>
+
+       
+         <div class= "refresh">
+         <h1 style = "padding-top:10%;
+                     color: #D89216;
+                     text-align: center;
+                     font-weight: bold;
+                     font-size: 3vw;">Film sauvegardé</h1>
+        </div>
+
+        
+         <?php
+       
+       
 
 
         
@@ -55,3 +73,4 @@ if (!empty($_GET['id'])) {
 
     die('404');
 }
+include('inc/footer.php');
