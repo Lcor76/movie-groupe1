@@ -22,9 +22,9 @@
           <li class="nav__item"><a href="#">About</a></li>
           <?php if(isLogged()) { ?>
               <li class="nav__item"><a  href="logout.php">Déconnexion</a></li>
-              <li>Bonjour <?= ucfirst($_SESSION['user']['pseudo']) ?></li>
+              <li class="bienvenu">Bonjour <?= ucfirst($_SESSION['user']['pseudo']) ?> !</li>
           <?php } else { ?>
-          
+
               <li class="nav__item"><a  href="register.php">Inscription</a></li>
               <li class="nav__item"><a  href="login.php">Connexion</a></li>
           <?php } ?>

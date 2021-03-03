@@ -21,10 +21,15 @@ if(!empty($_GET['slug'])) {
     if(empty($movies)){
         die('404');
     }
+    
 
 } else {
-    die('404');
+
+  die('404');
 }
+
+
+
 // debug($movies);
 
 
@@ -46,7 +51,22 @@ include('inc/header.php');?>
               <p>-Writers       : <?= $movies['writers'] ?></p><br/>
             </div>
         </div>
-     </div>
+        </div>
+        <?php 
+        if(isLogged()){ 
+
+?>
+
+<a href="favoris.php?id=<?= $movies['id']?>">Ajouter à mes films à voir</a>
+
+
+
+
+<?php } else {
+
+echo 'Vous n\'êtes pas connecté';
+} ?>
+    
 
 
 

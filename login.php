@@ -16,6 +16,7 @@ if(!empty($_POST['submitted'])) {
     $query->bindValue(':login', $login, PDO::PARAM_STR);
     $query->execute();
     $user = $query->fetch();
+    
     if(!empty($user)) {
         if(password_verify($password,$user['password'])) {
             $_SESSION['user'] = array(
