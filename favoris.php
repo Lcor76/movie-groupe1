@@ -39,11 +39,10 @@ if (!empty($_GET['id'])) {
         $query = $pdo->prepare($sql);
         $query->bindValue(':id_user'    ,$utilisateur ,PDO::PARAM_INT );
         $query->bindValue(':id_movie'   ,$movie_id ,PDO::PARAM_INT );
-        if ($query->execute()){
-            echo 'Film enregistré';
-        } else {
-            echo 'desolé une erreur est survenue';
-        }
+        $query->execute();
+        header('Location:index.php');
+
+
         
     
     
