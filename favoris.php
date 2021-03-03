@@ -49,11 +49,7 @@ if (!empty($_GET['id'])) {
 
        
          <div class= "refresh">
-         <h1 style = "padding-top:10%;
-                     color: #D89216;
-                     text-align: center;
-                     font-weight: bold;
-                     font-size: 3vw;">Film sauvegardé</h1>
+         <h1>Film sauvegardé dans vos favoris</h1>
         </div>
 
         
