@@ -21,6 +21,7 @@
           <li class="nav__item"><a href="index.php">Home</a></li>
           <li class="nav__item"><a href="#">About</a></li>
           <?php if(isLogged()) { ?>
+              <li class="nav__item"><a  href="vosFilms.php">Favoris</a></li>
               <li class="nav__item"><a  href="logout.php">Déconnexion</a></li>
               <li class="bienvenu">Bonjour <?= ucfirst($_SESSION['user']['pseudo']) ?> !</li>
           <?php } else { ?>
